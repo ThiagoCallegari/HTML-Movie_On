@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Blog de criticas de cinema">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Thiago Calegari">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    nav {
+      background-color: dimgrey;
+    }
+
+    /*Alteração de estilo de menu*/
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    ul li {
+      display: inline; /*Tornar lista horizontal*/
+      padding: 3%; /*Aumentar espaçamento*/
+    }
+
+    a {
+      text-decoration: none;
+      color: chocolate;
+    }
+
+    header {
+      color: chocolate;
+      font-size: 1000%;
+      text-align: center;
+    }
+
+    h1 {
+      color: darkslategray;
+    }
+
+    .harry {
+      justify-content: left;
+    }
+
+    .moana {
+      justify-content: center;
+    }
+
+    .lord {
+      justify-content: right;
+    }
+
+    .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block
+    }
+
+    footer {
+      background-color: dimgrey;
+    }
+  </style>
+</head>
+<body>
+  <header>Movie On!</header>
+  <!--Menu-->
+  <nav>
+    <ul>
+      <!--li = itens da lista-->
+      <li>
+        <a href="https://google.com" target="_blank">Home</a>
+      </li> 
+     <li>
+        <a href="https://google.com" target="_blank">Sobre</a>
+      </li>
+      <li>
+        <a href="https://google.com" target="_blank">Contato</a>
+     </li>
+      <!--Conteúdo-->
+    </ul>
+  </nav>
+
+  <ul>
+    <li>
+      <h1 class="harry">Harry Potter</h2><br>
+      <img class="harry" src="C:\Users\Generation\Desktop\Thiago\Blog - Movie\harry.jpg" alt="Poster Harry Potter" title="Node.js" width="200" height="300">
+    </li> 
+    <li>
+      <h1 class="moana" id="moana">Moana</h2><br>
+      <img class="moana" src="C:\Users\Generation\Desktop\Thiago\Blog - Movie\moana.jpg" alt="Poster Moana" title="Node.js" width="200" height="300">
+    </li>
+    <li>
+      <h1 id="lord">Lord Of The Rings</h2><br>
+      <img class="lord" src="C:\Users\Generation\Desktop\Thiago\Blog - Movie\lord.jpg" alt="Poster Lord Of The Rings" title="Node.js" width="200" height="300">
+    </li>
+  </ul>
+
+  <section>
+      <iframe class="center" width="727" height="409" src="https://www.youtube.com/embed/LYutHgaXjyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <h6><em>Copyright © Fandango. All rights reserved.</em></h6>
+  </footer>
+</body>
+</html>
