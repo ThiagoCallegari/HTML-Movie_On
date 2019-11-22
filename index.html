@@ -1,108 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Blog de criticas de cinema">
-  <meta name="keywords" content="HTML, CSS">
-  <meta name="author" content="Thiago Calegari">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style>
-    nav {
-      background-color: dimgrey;
-    }
 
-    /*Alteração de estilo de menu*/
-    ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog de criticas de cinema">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Thiago Calegari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    ul li {
-      display: inline; /*Tornar lista horizontal*/
-      padding: 3%; /*Aumentar espaçamento*/
-    }
+    <title>Movie ON!</title>
 
-    a {
-      text-decoration: none;
-      color: chocolate;
-    }
+    <link rel="stylesheet" href="C:\Users\Generation\Desktop\HTML-Movie_On\assests\css\style.css">
+  </head>
 
-    header {
-      color: chocolate;
-      font-size: 1000%;
-      text-align: center;
-    }
+  <body>
+    <header>
+      <a class="menu" href="C:/Users/Generation/Desktop/HTML-Movie_On/index.html">Movie On!</a>
+    </header>
+ 
+    <nav>
+      <ul>
+        <li>
+          <a class="menu" href="C:/Users/Generation/Desktop/HTML-Movie_On/index.html">Home</a>
+        </li> 
+        <li>
+         <a class="menu" href="https://google.com" target="_blank">Sobre</a>
+        </li>
+        <li>
+         <a class="menu" href="https://google.com" target="_blank">Contato</a>
+        </li>
+      </ul>
+    </nav>
 
-    h1 {
-      color: darkslategray;
-    }
+    <section class="movieName">
+      <h1 id="harry">
+        <a class="movieName" href="https://www.rottentomatoes.com/franchise/harry_potter/" target="_blank">Harry Potter (2001)</a>
+      </h1>
+      <h1 id="moana">
+        <a class="movieName" href="https://www.rottentomatoes.com/m/moana_2016" target="_blank">Moana (2016)</a>
+      </h1>
+      <h1 id="lord">
+        <a class="movieName" href="https://www.rottentomatoes.com/franchise/lord_of_the_rings/" target="_blank">Lord Of The Rings (2001)</a>
+      </h1>
+    </section>
 
-    .harry {
-      justify-content: left;
-    }
+    <section id="poster">
+      <img class="harry" src="C:\Users\Generation\Desktop\HTML-Movie_On\assests\images\harry.jpg" alt="Poster Harry Potter" title="Node.js" width="200" height="300">
+      
+      <img class="moana" src="C:\Users\Generation\Desktop\HTML-Movie_On\assests\images\moana.jpg" alt="Poster Moana" title="Node.js" width="200" height="300">
 
-    .moana {
-      justify-content: center;
-    }
+      <img class="lord" src="C:\Users\Generation\Desktop\HTML-Movie_On\assests\images\lord.jpg" alt="Poster Lord Of The Rings" title="Node.js" width="200" height="300">
+    </section>
+      
+    <section id="critic">
+      <p>Fantastic Beasts and Where to Find Them draws on Harry Potter's rich mythology to deliver a spinoff that dazzles with franchise-building magic all its own.</p>
+      <p>With a title character as three-dimensional as its lush animation and a story that adds fresh depth to Disney's time-tested formula, Moana is truly a family-friendly adventure for the ages.</p>
+      <p>Full of eye-popping special effects, and featuring a pitch-perfect cast, The Lord of the Rings: The Fellowship of the Ring brings J.R.R. Tolkien's classic to vivid life.</p>
+    </section>
 
-    .lord {
-      justify-content: right;
-    }
+    <section id="trailer">
+      <h1>NEW MOVIE TRAILER 2019 | Weekly #01</h1>
+    </section>
 
-    .center {
-    margin-left: auto;
-    margin-right: auto;
-    display: block
-    }
+    <section>
+      <iframe id="video" width="727" height="409" src="https://www.youtube.com/embed/LYutHgaXjyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
-    footer {
-      background-color: dimgrey;
-    }
-  </style>
-</head>
-<body>
-  <header>Movie On!</header>
-  <!--Menu-->
-  <nav>
-    <ul>
-      <!--li = itens da lista-->
-      <li>
-        <a href="https://google.com" target="_blank">Home</a>
-      </li> 
-     <li>
-        <a href="https://google.com" target="_blank">Sobre</a>
-      </li>
-      <li>
-        <a href="https://google.com" target="_blank">Contato</a>
-     </li>
-      <!--Conteúdo-->
-    </ul>
-  </nav>
+    <section>
 
-  <ul>
-    <li>
-      <h1 class="harry">Harry Potter</h2><br>
-      <img class="harry" src="C:\Users\Generation\Desktop\Thiago\Blog - Movie\harry.jpg" alt="Poster Harry Potter" title="Node.js" width="200" height="300">
-    </li> 
-    <li>
-      <h1 class="moana" id="moana">Moana</h2><br>
-      <img class="moana" src="C:\Users\Generation\Desktop\Thiago\Blog - Movie\moana.jpg" alt="Poster Moana" title="Node.js" width="200" height="300">
-    </li>
-    <li>
-      <h1 id="lord">Lord Of The Rings</h2><br>
-      <img class="lord" src="C:\Users\Generation\Desktop\Thiago\Blog - Movie\lord.jpg" alt="Poster Lord Of The Rings" title="Node.js" width="200" height="300">
-    </li>
-  </ul>
+    </section>
 
-  <section>
-      <iframe class="center" width="727" height="409" src="https://www.youtube.com/embed/LYutHgaXjyI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
-
-  <footer>
-    <h6><em>Copyright © Fandango. All rights reserved.</em></h6>
-  </footer>
-</body>
+    <footer>
+      <h6><em>Copyright © Fandango. All rights reserved.</em></h6>
+    </footer>
+  </body>
 </html>
